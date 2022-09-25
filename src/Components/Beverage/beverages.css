@@ -1,0 +1,123 @@
+.beverages-SC {
+  margin-top: 130px;
+  height: 69vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.beverages-container {
+  width: 90%;
+  margin: 0 auto;
+
+  max-width: 1400px;
+}
+.beverages {
+  padding: 20px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px 20px;
+}
+.beverage-img {
+  transition: 0.4s;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.beverage-img img {
+  vertical-align: top;
+  width: 220px;
+  height: 240px;
+  cursor: pointer;
+  animation: animeFood 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+.beverage {
+  line-height: 30px;
+  border-radius: 4ex;
+  box-shadow: 0px 0px 8px 6px #265a60b9;
+  line-height: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(180, 50%, 79%);
+  justify-content: center;
+  background: linear-gradient(180deg, #265a60b9, #675032e6) fixed;
+  width: 333px;
+  height: 352px;
+  transition: .4s;
+  animation: anime-texts 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+.beverage:hover {
+  transition: 0.4s;
+  background-color: gainsboro;
+  transform: scale(1.07);
+  box-shadow: 0px 0px 5px 2px #313490b7;
+}
+@keyframes animeFood {
+  0% {
+    background: aliceblue;
+    border-radius: 2ex;
+    transform: rotate(0deg) scale(0.1);
+  }
+  50% {
+    border-radius: 100%;
+    background-color: rgb(203, 216, 22);
+    background-image: url(../../assests/food-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 33px 31px rgba(69, 45, 45, 0.75) inset;
+    transform: rotate(8deg) translate(15px, -20px) skew(8deg, -4deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px) skew(0deg, 0deg) scale(1);
+    border-radius: 2ex;
+    background-color: rgba(240, 248, 255, 0);
+  }
+}
+/* SINGLE BEVERAGE STYLE */
+.singleBeverage {
+  background: rgba(214, 212, 212, 0.241);
+  box-shadow: 0px 0px 3px 5px #222;
+  width: 90%;
+  border-radius: 2ex;
+  max-width: 900px;
+  height: 60vh;
+  margin: 180px auto 0px;
+}
+
+.beverage-card {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 20px;
+}
+.anime-texts {
+  line-height: 25px;
+  font-size: 15px;
+  max-width: 700px;
+  animation: anime-texts 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+
+.beverage-img-op img {
+  line-height: 50px;
+  vertical-align: middle;
+  width: 220px;
+  height: 240px;
+}
+@keyframes anime-texts {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    box-shadow: 0px 0px 153px 171px rgba(102, 130, 116, 0.406) inset;
+    transform: scale(1);
+    background-color: rgba(240, 248, 255, 0);
+  }
+}
+/* SINGLE BEVERAGE STYLE */

@@ -1,0 +1,131 @@
+.burger-SC {
+  margin-top: 130px;
+  /* background-color: rgb(15, 16, 15); */
+
+  height: 69vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.burger-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.burgers {
+  padding: 20px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: 0.4s;
+  gap: 25px 20px;
+}
+.burger-img {
+  transition: 0.4s;
+  overflow: hidden;
+   padding-bottom: 20px;
+}
+.burger-img img {
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  vertical-align: top;
+  width: 320px;
+  height: 218px;
+  animation: animeFood 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+
+@keyframes animeFood {
+  0% {
+    background: aliceblue;
+    border-radius: 2ex;
+    transform: rotate(0deg);
+  }
+  50% {
+    border-radius: 2ex;
+    background-color: rgb(203, 216, 22);
+    background-image: url(../../assests/food-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 33px 31px rgba(69, 45, 45, 0.75) inset;
+
+    transform: rotate(8deg) translate(15px, -20px) skew(8deg, -4deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px) skew(0deg, 0deg) scale(1);
+    border-radius: 2ex;
+    background-color: rgba(240, 248, 255, 0);
+  }
+}
+
+.burger {
+  transition: 0.4s;
+  line-height: 30px;
+  border-radius: 4ex;
+  box-shadow: 0px 0px 8px 6px #715530e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(180, 50%, 79%);
+  justify-content: center;
+  background: linear-gradient(180deg, #265a60b9, #675032e6) fixed;
+  width: 353px;
+  height: 352px;
+  animation: anime-texts 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+.burger:hover {
+  transition: 0.4s;
+ background-color: gainsboro;
+ transform: scale(1.07);
+ box-shadow: 0px 0px 5px 2px #313490b7;
+}
+/* BURGER-CARD STYLES */
+.singleBurger {
+  background: rgba(214, 212, 212, 0.241);
+  box-shadow: 0px 0px 3px 5px #222;
+  width: 90%;
+  border-radius: 2ex;
+  max-width: 900px;
+  height: 60vh;
+  margin: 180px auto 0px;
+}
+
+.burger-card {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 20px;
+  animation: anime-texts 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+.anime-texts {
+  line-height: 25px;
+  font-size: 15px;
+  max-width: 700px;
+  animation: anime-texts 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+
+.burger-img-op img {
+  line-height: 50px;
+  vertical-align: middle;
+  width: 340px;
+  height: 218px;
+}
+@keyframes anime-texts {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    box-shadow: 0px 0px 153px 171px rgba(102, 130, 116, 0.406) inset;
+    transform: scale(1);
+    background-color: rgba(240, 248, 255, 0);
+  }
+}
+/* BURGER-CARD STYLES */

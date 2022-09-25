@@ -1,0 +1,131 @@
+.desserts-SC {
+  margin-top: 130px;
+  height: 69vh;
+  display: flex;
+  justify-content: center;
+}
+.desserts-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.desserts {
+  padding: 20px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: 0.4s;
+  gap: 25px 20px;
+}
+.dessert {
+  transition: 0.4s;
+  line-height: 30px;
+  border-radius: 4ex;
+  box-shadow: 0px 0px 8px 6px #313490e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(180, 50%, 79%);
+  justify-content: center;
+  background: linear-gradient(180deg, #6026269b, #4c1d51c5) fixed;
+  transition: 0.4s;
+  width: 353px;
+  height: 352px;
+  animation: anime-texts 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+.dessert:hover {
+  transition: 0.4s;
+ background-color: gainsboro;
+ transform: scale(1.07);
+ box-shadow: 0px 0px 5px 2px #313490b7;
+}
+
+.desserts-img {
+  transition: 0.4s;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+@keyframes animeFood {
+  0% {
+    background: aliceblue;
+    border-radius: 2ex;
+    transform: rotate(0deg);
+  }
+  50% {
+    border-radius: 2ex;
+    background-color: rgb(203, 216, 22);
+    background-image: url(../../assests/food-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 33px 31px rgba(42, 43, 72, 0.75) inset;
+
+    transform: rotate(8deg) translate(15px, -20px) skew(8deg, -4deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px) skew(0deg, 0deg) scale(1);
+    border-radius: 2ex;
+    background-color: rgba(240, 248, 255, 0);
+  }
+}
+.desserts-img img {
+  transition: 0.4s;
+  overflow: hidden;
+  vertical-align: top;
+  width: 340px;
+  height: 228px;
+  cursor: pointer;
+  animation: animeFood 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+
+/* DESSERT-CARD STYLES */
+.singleDessert {
+  background: rgba(214, 212, 212, 0.241);
+  box-shadow: 0px 0px 3px 5px #222;
+  width: 90%;
+  border-radius: 2ex;
+  max-width: 900px;
+  height: 64vh;
+  margin: 180px auto 0px;
+}
+
+.dessert-card {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 20px;
+  animation: anime-texts 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+.anime-texts {
+  line-height: 25px;
+  font-size: 15px;
+  max-width: 700px;
+  animation: anime-texts 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+
+.dessert-img-op img {
+  line-height: 50px;
+  vertical-align: middle;
+  width: 340px;
+  height: 218px;
+}
+.dessert-img-op {
+}
+@keyframes anime-texts {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    box-shadow: 0px 0px 153px 171px rgba(102, 130, 116, 0.406) inset;
+    transform: scale(1);
+    background-color: rgba(240, 248, 255, 0);
+  }
+}
+/* DESSERT-CARD STYLES */
